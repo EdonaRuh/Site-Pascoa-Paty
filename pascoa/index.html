@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	            <a id="navTitle" class="navbar-brand" href="index.html"></a>
+	        </div>
+	    </div>
+	</nav>
+
+	<div class="container-fluid"><!--Classe bootstrap-->
+		<div class="form-inline"><!--Classe responsavel por fazer todos os campos do formulario ficarem na mesma linha-->
+			<div class="form-group">
+				<input type="text" class="form-control" id="nome" placeholder="nome">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="qtd" placeholder="quantidade">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="valor" placeholder="valor">
+			</div>
+			<span id="btnUpdate" style="display: none;">
+				<span id="pegaId"></span>
+				<button onclick="updateData();" class="btn btn-default">Save</button>
+				<button onclick="resetForm();" class="btn btn-default">Cancelar</button>
+			</span>
+			<button id="btnAdd" onclick="addData();" class="btn btn-default">Add</button>
+		</div>
+
+		<div id="alertErro" style="display: none;"></div>
+		
+		<table id="tableList" class="table">
+			
+		</table>
+	</div>
+	
+</body>
+<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</html>
